@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151515">
+  <meta name="description" content="Shop the VYBEMART edit: style, home, tech, and wellness finds for your everyday.">
+  <title>Shop the edit — VYBEMART</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="js/store.js" defer></script>
+  <script src="js/ui.js" defer></script>
+</head>
+<body data-page="products">
+  <div class="announcement-bar"><p>GOOD TASTE, ON REPEAT <span>•</span> FREE DELIVERY ON ORDERS OVER $75</p></div>
+  <header class="site-header"><div class="container navbar">
+    <a class="logo" href="index.html" aria-label="VYBEMART home"><span class="logo-icon">V</span><span>VYBE<span class="logo-accent">MART</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="products.html" aria-current="page">Products</a><a class="nav-link" href="index.html#categories">Collections</a></nav>
+    <div class="nav-actions"><a class="cart-button" href="cart.html" aria-label="Shopping cart, 0 items">Bag <span class="cart-count" data-cart-count aria-live="polite">0</span></a></div>
+  </div></header>
+  <main>
+    <section class="page-intro"><div class="container"><span class="eyebrow">THE VYBEMART EDIT</span><h1>Find your next <span class="text-accent">obsession.</span></h1><p>Good taste, zero gatekeeping. Search, sort, and make it yours.</p></div></section>
+    <section class="section featured-section"><div class="container">
+      <div class="products-toolbar" aria-label="Product filters">
+        <label for="product-search">Search products<input id="product-search" class="search-input" type="search" placeholder="Try “linen” or “speaker”" autocomplete="off"></label>
+        <label for="category-filter">Category<select id="category-filter" class="filter-select"><option value="all">All categories</option></select></label>
+        <label for="price-sort">Sort by<select id="price-sort" class="filter-select"><option value="featured">Featured</option><option value="ascending">Price: low to high</option><option value="descending">Price: high to low</option></select></label>
+      </div>
+      <p class="product-result-count" data-product-count aria-live="polite">Loading products…</p>
+      <div class="product-grid" data-product-grid aria-live="polite"><div class="loading-message"><span class="loading-spinner" aria-hidden="true"></span><p>Finding the good things…</p></div></div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="logo footer-logo" href="index.html"><span class="logo-icon">V</span><span>VYBE<span class="logo-accent">MART</span></span></a><p>Your next favorite thing is closer than you think. Stay curious, stay vibey.</p></div><div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="products.html">Shop all</a><a href="index.html#categories">Collections</a></div><div class="footer-column"><h3>Your bag</h3><a href="cart.html">Shopping bag</a><a href="products.html">Keep exploring</a></div><div class="footer-column"><h3>Made by</h3><p><strong>ResultSmashers</strong></p><p>Lahore, Pakistan</p><a href="tel:+923350917300">+92-3350917300</a></div></div><div class="footer-bottom"><p>© 2026 VYBEMART · ResultSmashers</p><p>Demo checkout only — no real payment is taken.</p></div></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>

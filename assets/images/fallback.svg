@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="VYBEMART product image unavailable">
+  <rect width="640" height="480" fill="#171816"/>
+  <circle cx="320" cy="195" r="66" fill="#b8ee35"/>
+  <path d="M280 195h80M320 155v80" stroke="#171816" stroke-width="12" stroke-linecap="round"/>
+  <text x="320" y="320" text-anchor="middle" fill="#b8ee35" font-family="Arial,sans-serif" font-size="24" font-weight="700">VYBEMART</text>
+</svg>

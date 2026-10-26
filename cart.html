@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151515">
+  <meta name="description" content="Review your VYBEMART finds and complete a simulated checkout demonstration.">
+  <title>Your bag — VYBEMART</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="js/store.js" defer></script>
+  <script src="js/ui.js" defer></script>
+</head>
+<body data-page="cart">
+  <div class="announcement-bar"><p>GOOD TASTE, ON REPEAT <span>•</span> FREE DELIVERY ON ORDERS OVER $75</p></div>
+  <header class="site-header"><div class="container navbar">
+    <a class="logo" href="index.html" aria-label="VYBEMART home"><span class="logo-icon">V</span><span>VYBE<span class="logo-accent">MART</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="products.html">Products</a><a class="nav-link" href="index.html#categories">Collections</a></nav>
+    <div class="nav-actions"><a class="cart-button" href="cart.html" aria-current="page" aria-label="Shopping cart, 0 items">Bag <span class="cart-count" data-cart-count aria-live="polite">0</span></a></div>
+  </div></header>
+  <main class="cart-page-section"><div class="container">
+    <div class="cart-page-heading"><span class="eyebrow">THE GOOD STUFF</span><h1>Your <span class="text-accent">bag.</span></h1><p class="section-description">Your picks look good already. Ready when you are.</p></div>
+    <div class="cart-layout">
+      <div><div class="cart-items" data-cart-items aria-live="polite"></div><div class="empty-cart" data-empty-cart hidden><h2>Nothing in your bag, yet.</h2><p>There are plenty of good things to find.</p><a class="btn btn-primary" href="products.html">Continue shopping</a></div>
+        <form class="checkout-form" data-checkout-form novalidate>
+          <h2>Delivery details</h2><p class="checkout-notice">VYBEMART checkout demo. No payment is taken and your details are not saved.</p>
+          <div class="checkout-grid">
+            <div class="form-field"><label for="customer-name">Full name</label><input id="customer-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required aria-describedby="error-name"><span class="form-error" id="error-name"></span></div>
+            <div class="form-field"><label for="customer-email">Email address</label><input id="customer-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="error-email"><span class="form-error" id="error-email"></span></div>
+            <div class="form-field"><label for="customer-phone">Phone number</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24" required aria-describedby="error-phone"><span class="form-error" id="error-phone"></span></div>
+            <div class="form-field"><label for="customer-city">City</label><input id="customer-city" name="city" type="text" autocomplete="address-level2" maxlength="80" required aria-describedby="error-city"><span class="form-error" id="error-city"></span></div>
+            <div class="form-field full-width"><label for="customer-address">Delivery address</label><textarea id="customer-address" name="address" autocomplete="street-address" minlength="5" maxlength="240" required aria-describedby="error-address"></textarea><span class="form-error" id="error-address"></span></div>
+            <div class="form-field"><label for="customer-postal">Postal code</label><input id="customer-postal" name="postal" autocomplete="postal-code" maxlength="16" required aria-describedby="error-postal"><span class="form-error" id="error-postal"></span></div>
+            <div class="form-field"><label for="payment-method">Payment method</label><select id="payment-method" name="payment" required aria-describedby="error-payment"><option value="">Choose a demo option</option><option value="card">Card (simulation only)</option><option value="cash">Cash on delivery (simulation)</option></select><span class="form-error" id="error-payment"></span></div>
+          </div>
+          <button class="btn btn-primary checkout-submit" type="submit">Place demo order</button>
+        </form>
+        <p class="checkout-message" data-checkout-message role="status" aria-live="polite" hidden></p>
+      </div>
+      <aside class="cart-summary" aria-label="Order summary"><h2>Order summary</h2><div class="cart-total-row"><span>Subtotal</span><strong data-subtotal>$0.00</strong></div><div class="cart-total-row"><span>Shipping</span><strong data-shipping>$0.00</strong></div><p class="shipping-note" data-shipping-note>Free shipping on orders of $75 or more.</p><div class="cart-total-row grand-total"><span>Total</span><strong data-total>$0.00</strong></div><button class="clear-cart" type="button" data-clear-cart>Clear bag</button></aside>
+    </div>
+  </div></main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="logo footer-logo" href="index.html"><span class="logo-icon">V</span><span>VYBE<span class="logo-accent">MART</span></span></a><p>Your next favorite thing is closer than you think. Stay curious, stay vibey.</p></div><div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="products.html">Shop all</a><a href="index.html#categories">Collections</a></div><div class="footer-column"><h3>Your bag</h3><a href="cart.html">Shopping bag</a><a href="products.html">Keep exploring</a></div><div class="footer-column"><h3>Made by</h3><p><strong>ResultSmashers</strong></p><p>Lahore, Pakistan</p><a href="tel:+923350917300">+92-3350917300</a></div></div><div class="footer-bottom"><p>© 2026 VYBEMART · ResultSmashers</p><p>Demo checkout only — no real payment is taken.</p></div></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>

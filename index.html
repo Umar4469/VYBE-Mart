@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151515">
+  <meta name="description" content="Find your next obsession at VYBEMART. Fresh everyday finds across style, tech, home, and wellness.">
+  <title>VYBEMART — Find your next obsession</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+  <script src="js/store.js" defer></script>
+  <script src="js/ui.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="announcement-bar"><p>GOOD TASTE, ON REPEAT <span>•</span> FREE DELIVERY ON ORDERS OVER $75</p></div>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="logo" href="index.html" aria-label="VYBEMART home"><span class="logo-icon">V</span><span>VYBE<span class="logo-accent">MART</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="index.html#categories">Collections</a>
+      </nav>
+      <div class="nav-actions"><a class="cart-button" href="cart.html" aria-label="Shopping cart, 0 items">Bag <span class="cart-count" data-cart-count aria-live="polite">0</span></a></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEW FAVORITE PLACE TO SCROLL</span>
+          <h1>Good taste.<br>Zero <span class="text-accent">gatekeeping.</span></h1>
+          <p class="hero-description">The pieces you keep saving, finally in one place. Fresh finds for your fit, your space, and your everyday vibe.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="products.html">Get into it <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#categories">Find your vibe</a></div>
+          <div class="hero-trust"><div class="trust-item"><span class="trust-number">12</span><span class="trust-label">little obsessions</span></div><span class="trust-divider"></span><div class="trust-item"><span class="trust-number">100%</span><span class="trust-label">main-character energy</span></div></div>
+        </div>
+        <div class="hero-visual"><div class="hero-image-frame"><img class="hero-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A stylish shopper carrying bags after a day out in the city" data-fallback></div><div class="hero-floating-card"><span class="floating-icon" aria-hidden="true">✳</span><div><strong>Current obsession</strong><p>Your next fave is here.</p></div></div><span class="hero-image-tag"><span class="eyebrow-dot"></span> THE GOOD STUFF</span><span class="hero-decoration hero-decoration-one"></span><span class="hero-decoration hero-decoration-two"></span></div>
+      </div>
+    </section>
+    <section class="benefits-section" aria-label="Shopping benefits"><div class="container benefits-grid">
+      <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">↗</span><div><h3>Shipping on us</h3><p>When your bag hits $75</p></div></div>
+      <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">◇</span><div><h3>Easy checkout</h3><p>A smooth demo experience</p></div></div>
+      <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">♡</span><div><h3>Good energy only</h3><p>Finds picked with intention</p></div></div>
+      <div class="benefit-item"><span class="benefit-icon" aria-hidden="true">✳</span><div><h3>Little-big upgrades</h3><p>Your everyday, but better</p></div></div>
+    </div></section>
+    <section class="section categories-section" id="categories"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">PICK YOUR PERSONALITY</span><h2>What’s your <span class="text-accent">vibe?</span></h2><p class="section-description">Tap into your next favorite corner of the internet.</p></div><a class="text-link" href="products.html">See the whole edit <span aria-hidden="true">↗</span></a></div>
+      <div class="category-grid">
+        <a class="category-card" href="products.html?category=Home"><div class="category-image-wrap"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Warm, considered home interiors" data-fallback></div><div class="category-info"><h3>Home, reimagined</h3><p>Comfort in the little details</p></div></a>
+        <a class="category-card" href="products.html?category=Accessories"><div class="category-image-wrap"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Minimal watch and considered accessories" data-fallback></div><div class="category-info"><h3>The finishing touches</h3><p>Accessories for every day</p></div></a>
+        <a class="category-card" href="products.html?category=Tech"><div class="category-image-wrap"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Over-ear headphones in a warm studio" data-fallback></div><div class="category-info"><h3>Everyday tech</h3><p>Useful, beautifully simple</p></div></a>
+        <a class="category-card" href="products.html?category=Wellness"><div class="category-image-wrap"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Simple self-care essentials" data-fallback></div><div class="category-info"><h3>Slow moments</h3><p>Small rituals, more often</p></div></a>
+      </div>
+    </div></section>
+    <section class="section featured-section" id="featured"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">THE INTERNET’S CURRENT FAVES</span><h2>Meet your next <span class="text-accent">obsession.</span></h2><p class="section-description">The little things making everyday life look a lot cooler.</p></div><a class="text-link" href="products.html">Shop every find <span aria-hidden="true">↗</span></a></div>
+      <div class="product-grid" data-featured-products aria-live="polite"><div class="loading-message"><span class="loading-spinner" aria-hidden="true"></span><p>Finding the good things…</p></div></div>
+    </div></section>
+    <section class="section reviews-section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="reviews-header">
+          <div><span class="eyebrow">VYBE NOTES</span><h2 id="reviews-heading">The good word <span class="text-accent">gets around.</span></h2><p class="section-description">A little preview of the love we hope these finds earn.</p></div>
+          <span class="reviews-stamp" aria-hidden="true">GOOD<br>FINDS<br>ONLY <span>✳</span></span>
+        </div>
+        <p class="reviews-demo-note">Demo reviews — sample content for this project, not verified customer feedback.</p>
+        <div class="reviews-grid">
+          <article class="review-card"><div class="review-card-top"><span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><span class="review-demo-tag">SAMPLE</span></div><blockquote>“That one little home upgrade that somehow makes the whole room feel different.”</blockquote><div class="review-author"><span class="review-avatar" aria-hidden="true">H</span><div><strong>Homebody energy</strong><span>Home edit · Demo review</span></div></div></article>
+          <article class="review-card review-card-featured"><div class="review-card-top"><span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><span class="review-demo-tag">SAMPLE</span></div><blockquote>“Found the thing I didn’t know I needed. The daily rotation has officially changed.”</blockquote><div class="review-author"><span class="review-avatar" aria-hidden="true">D</span><div><strong>Daily fave collector</strong><span>Everyday finds · Demo review</span></div></div></article>
+          <article class="review-card"><div class="review-card-top"><span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><span class="review-demo-tag">SAMPLE</span></div><blockquote>“Cute, useful, and actually feels like me. Consider this my sign to treat myself.”</blockquote><div class="review-author"><span class="review-avatar" aria-hidden="true">V</span><div><strong>Vibe curator</strong><span>Accessories edit · Demo review</span></div></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-section"><div class="container newsletter-inner"><div><span class="eyebrow">A LITTLE SOMETHING FOR YOUR INBOX</span><h2>Stay in the <span class="text-accent">loop.</span></h2><p>Get the occasional good thing. This demo saves your email in this browser only.</p></div><form class="newsletter-form" data-newsletter novalidate><label class="visually-hidden" for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="newsletter-message"><button class="btn btn-primary" type="submit">Count me in <span aria-hidden="true">↗</span></button><p id="newsletter-message" class="form-message" aria-live="polite"></p></form></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="logo footer-logo" href="index.html"><span class="logo-icon">V</span><span>VYBE<span class="logo-accent">MART</span></span></a><p>Your next favorite thing is closer than you think. Stay curious, stay vibey.</p></div><div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="products.html">Shop all</a><a href="index.html#categories">Collections</a></div><div class="footer-column"><h3>Your bag</h3><a href="cart.html">Shopping bag</a><a href="products.html">Keep exploring</a></div><div class="footer-column"><h3>Made by</h3><p><strong>ResultSmashers</strong></p><p>Lahore, Pakistan</p><a href="tel:+923350917300">+92-3350917300</a></div></div><div class="footer-bottom"><p>© 2026 VYBEMART · ResultSmashers</p><p>Demo checkout only — no real payment is taken.</p></div></div></footer>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>
